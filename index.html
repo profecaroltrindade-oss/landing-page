@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carolina Trindade | Guia Educacional & Aulas Particulares</title>
+    <title>Carolina Trindade | Aulas Particulares & Ensino Fundamental I</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -68,22 +68,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 105px; /* Aumentado ligeiramente para acomodar o logo maior */
+            padding: 12px 24px;
+            min-height: 95px;
+            gap: 15px;
         }
 
         .brand-logo-container {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 14px;
             text-decoration: none;
-            max-width: 70%;
         }
 
-        /* LOGO AUMENTADO */
+        /* LOGO SEM FUNDO BRANCO */
         .brand-logo-img {
-            height: 80px; /* Aumentado de 62px para 80px */
+            height: 75px;
             width: auto;
             object-fit: contain;
+            mix-blend-mode: multiply; /* Remove o fundo branco visualmente */
         }
 
         .brand-text {
@@ -93,17 +95,16 @@
 
         .brand-name {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.9rem;
+            font-size: 1.85rem;
             font-weight: 700;
             color: var(--primary-petroleum);
             line-height: 1.05;
-            white-space: nowrap;
         }
 
         .brand-tagline {
             font-size: 0.76rem;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
+            letter-spacing: 1px;
             color: var(--accent-rose);
             font-weight: 700;
         }
@@ -112,18 +113,19 @@
         .btn-primary {
             background-color: var(--primary-petroleum);
             color: #FFFFFF;
-            padding: 14px 28px;
+            padding: 12px 24px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             box-shadow: 0 4px 15px rgba(14, 59, 67, 0.25);
             white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .btn-primary:hover {
@@ -144,7 +146,7 @@
 
         /* Hero Section */
         .hero {
-            padding-top: 195px;
+            padding-top: 185px;
             padding-bottom: 95px;
             background: linear-gradient(135deg, #F7F3ED 0%, #EFE7DC 100%);
         }
@@ -184,7 +186,6 @@
             max-width: 580px;
         }
 
-        /* Frase em destaque em substituição ao botão agendar */
         .hero-question-call {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.85rem;
@@ -260,7 +261,7 @@
             font-size: 1.08rem;
         }
 
-        /* Quem Sou Eu / About */
+        /* Eu, professora / About */
         .about-section {
             background-color: var(--bg-card);
             border-top: 2px solid var(--border-soft);
@@ -288,6 +289,7 @@
             max-width: 150px;
             margin-bottom: 22px;
             filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+            mix-blend-mode: multiply;
         }
 
         .about-card-img h3 {
@@ -471,33 +473,44 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* OTIMIZAÇÕES MOBILE (MELHORIA RESPONSIVA) */
+        /* OTIMIZAÇÕES MOBILE CORRIGIDAS */
         @media (max-width: 992px) {
             .nav-container {
-                height: 90px;
-                padding: 0 10px;
+                flex-direction: column;
+                align-items: center;
+                padding: 12px;
+                min-height: auto;
+            }
+
+            .brand-logo-container {
+                margin-bottom: 8px;
+                justify-content: center;
             }
 
             .brand-logo-img {
-                height: 60px; /* Redimensionamento suave para telas menores */
+                height: 55px;
             }
 
             .brand-name {
-                font-size: 1.35rem; /* Ajustado para não cortar o nome Carolina Trindade */
+                font-size: 1.5rem;
+                text-align: center;
             }
 
             .brand-tagline {
                 font-size: 0.65rem;
-                letter-spacing: 0.8px;
+                letter-spacing: 0.5px;
+                text-align: center;
             }
 
             .btn-primary {
-                padding: 10px 16px;
-                font-size: 0.85rem;
+                padding: 8px 18px;
+                font-size: 0.82rem;
+                width: 100%;
+                max-width: 280px;
             }
 
             .hero {
-                padding-top: 140px;
+                padding-top: 180px;
                 padding-bottom: 60px;
             }
 
@@ -510,11 +523,11 @@
             }
 
             .hero h1 {
-                font-size: 2.4rem;
+                font-size: 2.3rem;
             }
 
             .hero-question-call {
-                font-size: 1.5rem;
+                font-size: 1.45rem;
             }
         }
     </style>
@@ -528,7 +541,7 @@
                 <img src="Logo.jpeg" alt="Logotipo Tangram Carolina Trindade" class="brand-logo-img">
                 <div class="brand-text">
                     <span class="brand-name">Carolina Trindade</span>
-                    <span class="brand-tagline">Guia Educacional & Aulas Particulares</span>
+                    <span class="brand-tagline">Professora de Ensino Fundamental I & Aulas Particulares</span>
                 </div>
             </a>
             <a href="https://wa.me/5511963017787?text=Olá,%20Professora%20Carolina!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20particulares." class="btn-primary">Falar via WhatsApp</a>
@@ -539,11 +552,10 @@
     <section class="hero">
         <div class="container hero-grid">
             <div>
-                <span class="badge">Guia Educacional & Ensino Fundamental I</span>
+                <span class="badge">Aulas Particulares | Ensino Fundamental I</span>
                 <h1>Aulas Particulares Transformadoras</h1>
                 <p class="lead">Olhar atento às necessidades da criança, acolhimento, diálogo empático e orientador para promover aprendizagens com sentido.</p>
                 
-                <!-- Frase em destaque no lugar do antigo botão -->
                 <div class="hero-question-call">
                     Seu filho precisa de apoio para avançar nos estudos?
                 </div>
@@ -564,22 +576,22 @@
         </div>
     </section>
 
-    <!-- Quem Sou Eu / About Section -->
+    <!-- Eu, professora / About Section -->
     <section class="about-section">
         <div class="container about-grid">
             <div class="about-card-img">
                 <img src="Logo.jpeg" alt="Logo Tangram" class="logo-inside">
                 <h3 class="serif-font">Carolina Trindade</h3>
-                <p class="subtitle">Guia Educacional & Professora Titular</p>
+                <p class="subtitle">Professora de Ensino Fundamental I</p>
                 <p style="font-size: 0.98rem; color: rgba(255, 255, 255, 0.95); font-style: italic;">
-                    "18 anos de trajetória nas melhores instituições de São Paulo, construindo um vínculo afetuoso e seguro que devolve à criança o prazer de estudar."
+                    "18 anos de trajetória em excelentes instituições de São Paulo, construindo um vínculo afetuoso e seguro que devolve à criança o prazer de estudar."
                 </p>
             </div>
 
             <div class="about-content">
-                <h2>Quem Sou Eu</h2>
-                <p>Prazer! Sou Carolina Trindade, professora titular do Ensino Fundamental I há 18 anos em São Paulo. Ao longo da minha trajetória atuei nas melhores instituições da cidade e entendi que aprender de verdade exige autoria, afeto e intencionalidade.</p>
-                <p>Nas minhas aulas particulares, vejo o estudante como o sujeito ativo em seu processo de aprendizagem. Como <strong>Guia Educacional</strong>, meu papel é ser a mediadora desse processo: construo um vínculo afetuoso e seguro que devolve à criança o prazer e a confiança em estudar, ao se reconhecer potente, promovendo aprendizagens com sentido.</p>
+                <h2>Eu, professora</h2>
+                <p>Prazer! Sou Carolina Trindade, professora titular do Ensino Fundamental I há 18 anos em São Paulo. Ao longo da minha trajetória atuei em excelentes instituições da cidade e entendi que aprender de verdade exige autoria, afeto e intencionalidade.</p>
+                <p>Nas minhas aulas particulares atuo como guia educacional, vejo o estudante como o sujeito ativo em seu processo de aprendizagem. Meu papel é ser a mediadora desse processo: construo um vínculo afetuoso e seguro que devolve à criança o prazer e a confiança em estudar, ao se reconhecer potente, promovendo aprendizagens com sentido.</p>
                 <p>Unindo uma sólida experiência didática às contribuições da Neuroeducação, utilizo estratégias personalizadas para o perfil de cada aluno. Avalio as necessidades e particularidades da criança e penso intervenções especialmente para ela, por meio de atividades diagnósticas, escuta e observação. Seja para organizar a rotina de estudos, superar dificuldades pontuais ou intervir em transtornos específicos de aprendizagem, cada encontro é planejado conforme o ritmo, os interesses e as reais necessidades da criança.</p>
             </div>
         </div>
@@ -612,11 +624,11 @@
 
             <!-- Ideias Orientadoras -->
             <div style="margin-top: 75px;">
-                <h3 class="serif-font" style="font-size: 2.2rem; color: var(--primary-petroleum); text-align: center; margin-bottom: 30px;">Ideias que Orientam a Minha Prática</h3>
+                <h3 class="serif-font" style="font-size: 2.2rem; color: var(--primary-petroleum); text-align: center; margin-bottom: 30px;">Ideias que Inspiram meu Trabalho</h3>
                 <div class="ideas-grid">
                     <div class="idea-item">✨ Crianças felizes aprendem melhor.</div>
                     <div class="idea-item">✨ Criança valorizada, apoiada, sente-se capaz.</div>
-                    <div class="idea-item">✨ Toda criança é capaz de aprender se houver um professor bem habilitado a ensinar.</div>
+                    <div class="idea-item">✨ Toda criança é capaz de aprender.</div>
                     <div class="idea-item">✨ Ensinar de forma lúdica e interativa transforma a experiência de aprendizagem.</div>
                     <div class="idea-item">✨ Criança participando do próprio processo de aprendizagem, aprende com sentido.</div>
                     <div class="idea-item">✨ Crianças precisam ser ouvidas e suas ideias consideradas.</div>
@@ -713,7 +725,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Carolina Trindade — Guia Educacional & Aulas Particulares | Ensino Fundamental I</p>
+            <p>Carolina Trindade — Aulas Particulares & Ensino Fundamental I</p>
             <p>Atendimento em domicílio na Zona Oeste de São Paulo & Osasco</p>
         </div>
     </footer>
