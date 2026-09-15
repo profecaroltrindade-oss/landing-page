@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carolina Trindade | Aulas Particulares Transformadoras</title>
+    <title>Carolina Trindade | Guia Educacional & Aulas Particulares</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,11 +11,11 @@
     <style>
         :root {
             /* Paleta VIBRANTE E EQUILIBRADA fiel ao Logotipo Tangram */
-            --primary-petroleum: #0E3B43;      /* Azul Petróleo denso e nobre */
+            --primary-petroleum: #0E3B43;      /* Azul Petróleo denso */
             --secondary-petroleum: #18535F;    /* Azul Petróleo vibrante */
-            --accent-rose: #BF5B65;           /* Rosa Queimado mais denso e presente */
-            --accent-terracotta: #C86D5A;     /* Terracota rico para destaques */
-            --bg-cream: #F7F3ED;              /* Creme aquecido e elegante */
+            --accent-rose: #BF5B65;           /* Rosa Queimado denso */
+            --accent-terracotta: #C86D5A;     /* Terracota rico */
+            --bg-cream: #F7F3ED;              /* Creme aquecido */
             --bg-card: #FFFFFF;
             --text-dark: #121E21;
             --text-muted: #4A585C;
@@ -53,7 +53,7 @@
             padding: 90px 0;
         }
 
-        /* Header / Navbar */
+        /* Header / Navbar Ajustado */
         header {
             background-color: rgba(247, 243, 237, 0.98);
             backdrop-filter: blur(10px);
@@ -68,18 +68,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 95px;
+            height: 105px; /* Aumentado ligeiramente para acomodar o logo maior */
         }
 
         .brand-logo-container {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 16px;
             text-decoration: none;
+            max-width: 70%;
         }
 
+        /* LOGO AUMENTADO */
         .brand-logo-img {
-            height: 62px;
+            height: 80px; /* Aumentado de 62px para 80px */
             width: auto;
             object-fit: contain;
         }
@@ -91,14 +93,15 @@
 
         .brand-name {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             font-weight: 700;
             color: var(--primary-petroleum);
-            line-height: 1.1;
+            line-height: 1.05;
+            white-space: nowrap;
         }
 
         .brand-tagline {
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             text-transform: uppercase;
             letter-spacing: 1.2px;
             color: var(--accent-rose);
@@ -109,17 +112,18 @@
         .btn-primary {
             background-color: var(--primary-petroleum);
             color: #FFFFFF;
-            padding: 14px 30px;
+            padding: 14px 28px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
             box-shadow: 0 4px 15px rgba(14, 59, 67, 0.25);
+            white-space: nowrap;
         }
 
         .btn-primary:hover {
@@ -140,7 +144,7 @@
 
         /* Hero Section */
         .hero {
-            padding-top: 180px;
+            padding-top: 195px;
             padding-bottom: 95px;
             background: linear-gradient(135deg, #F7F3ED 0%, #EFE7DC 100%);
         }
@@ -156,17 +160,17 @@
             display: inline-block;
             background-color: var(--primary-petroleum);
             color: #FFFFFF;
-            padding: 6px 18px;
+            padding: 7px 20px;
             border-radius: 30px;
             font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.8px;
+            font-weight: 700;
+            letter-spacing: 1px;
             text-transform: uppercase;
             margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.4rem;
             line-height: 1.12;
             color: var(--primary-petroleum);
             margin-bottom: 22px;
@@ -176,8 +180,21 @@
         .hero p.lead {
             font-size: 1.18rem;
             color: var(--text-muted);
-            margin-bottom: 32px;
+            margin-bottom: 28px;
             max-width: 580px;
+        }
+
+        /* Frase em destaque em substituição ao botão agendar */
+        .hero-question-call {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--accent-rose);
+            line-height: 1.25;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary-petroleum);
         }
 
         .hero-card {
@@ -454,7 +471,36 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        /* OTIMIZAÇÕES MOBILE (MELHORIA RESPONSIVA) */
         @media (max-width: 992px) {
+            .nav-container {
+                height: 90px;
+                padding: 0 10px;
+            }
+
+            .brand-logo-img {
+                height: 60px; /* Redimensionamento suave para telas menores */
+            }
+
+            .brand-name {
+                font-size: 1.35rem; /* Ajustado para não cortar o nome Carolina Trindade */
+            }
+
+            .brand-tagline {
+                font-size: 0.65rem;
+                letter-spacing: 0.8px;
+            }
+
+            .btn-primary {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+
+            .hero {
+                padding-top: 140px;
+                padding-bottom: 60px;
+            }
+
             .hero-grid, .about-grid, .neuro-grid {
                 grid-template-columns: 1fr;
             }
@@ -464,7 +510,11 @@
             }
 
             .hero h1 {
-                font-size: 2.6rem;
+                font-size: 2.4rem;
+            }
+
+            .hero-question-call {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -478,7 +528,7 @@
                 <img src="Logo.jpeg" alt="Logotipo Tangram Carolina Trindade" class="brand-logo-img">
                 <div class="brand-text">
                     <span class="brand-name">Carolina Trindade</span>
-                    <span class="brand-tagline">Aulas Particulares Transformadoras</span>
+                    <span class="brand-tagline">Guia Educacional & Aulas Particulares</span>
                 </div>
             </a>
             <a href="https://wa.me/5511963017787?text=Olá,%20Professora%20Carolina!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20particulares." class="btn-primary">Falar via WhatsApp</a>
@@ -489,10 +539,14 @@
     <section class="hero">
         <div class="container hero-grid">
             <div>
-                <span class="badge">Ensino Fundamental I</span>
+                <span class="badge">Guia Educacional & Ensino Fundamental I</span>
                 <h1>Aulas Particulares Transformadoras</h1>
                 <p class="lead">Olhar atento às necessidades da criança, acolhimento, diálogo empático e orientador para promover aprendizagens com sentido.</p>
-                <a href="https://wa.me/5511963017787?text=Olá,%20Professora%20Carolina!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20meu(minha)%20filho(a)." class="btn-primary btn-accent">Agendar Avaliação Diagnóstica</a>
+                
+                <!-- Frase em destaque no lugar do antigo botão -->
+                <div class="hero-question-call">
+                    Seu filho precisa de apoio para avançar nos estudos?
+                </div>
             </div>
 
             <div class="hero-card">
@@ -516,7 +570,7 @@
             <div class="about-card-img">
                 <img src="Logo.jpeg" alt="Logo Tangram" class="logo-inside">
                 <h3 class="serif-font">Carolina Trindade</h3>
-                <p class="subtitle">Professora Titular do Ensino Fundamental I</p>
+                <p class="subtitle">Guia Educacional & Professora Titular</p>
                 <p style="font-size: 0.98rem; color: rgba(255, 255, 255, 0.95); font-style: italic;">
                     "18 anos de trajetória nas melhores instituições de São Paulo, construindo um vínculo afetuoso e seguro que devolve à criança o prazer de estudar."
                 </p>
@@ -525,7 +579,7 @@
             <div class="about-content">
                 <h2>Quem Sou Eu</h2>
                 <p>Prazer! Sou Carolina Trindade, professora titular do Ensino Fundamental I há 18 anos em São Paulo. Ao longo da minha trajetória atuei nas melhores instituições da cidade e entendi que aprender de verdade exige autoria, afeto e intencionalidade.</p>
-                <p>Nas minhas aulas particulares, vejo o estudante como o sujeito ativo em seu processo de aprendizagem. Meu papel é ser a mediadora desse processo: construo um vínculo afetuoso e seguro que devolve à criança o prazer e a confiança em estudar, ao se reconhecer potente, promovendo aprendizagens com sentido.</p>
+                <p>Nas minhas aulas particulares, vejo o estudante como o sujeito ativo em seu processo de aprendizagem. Como <strong>Guia Educacional</strong>, meu papel é ser a mediadora desse processo: construo um vínculo afetuoso e seguro que devolve à criança o prazer e a confiança em estudar, ao se reconhecer potente, promovendo aprendizagens com sentido.</p>
                 <p>Unindo uma sólida experiência didática às contribuições da Neuroeducação, utilizo estratégias personalizadas para o perfil de cada aluno. Avalio as necessidades e particularidades da criança e penso intervenções especialmente para ela, por meio de atividades diagnósticas, escuta e observação. Seja para organizar a rotina de estudos, superar dificuldades pontuais ou intervir em transtornos específicos de aprendizagem, cada encontro é planejado conforme o ritmo, os interesses e as reais necessidades da criança.</p>
             </div>
         </div>
@@ -562,7 +616,7 @@
                 <div class="ideas-grid">
                     <div class="idea-item">✨ Crianças felizes aprendem melhor.</div>
                     <div class="idea-item">✨ Criança valorizada, apoiada, sente-se capaz.</div>
-                    <div class="idea-item">✨ Toda criança é capaz de aprender (se houver um professor bem habilitado a ensinar).</div>
+                    <div class="idea-item">✨ Toda criança é capaz de aprender se houver um professor bem habilitado a ensinar.</div>
                     <div class="idea-item">✨ Ensinar de forma lúdica e interativa transforma a experiência de aprendizagem.</div>
                     <div class="idea-item">✨ Criança participando do próprio processo de aprendizagem, aprende com sentido.</div>
                     <div class="idea-item">✨ Crianças precisam ser ouvidas e suas ideias consideradas.</div>
@@ -608,7 +662,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Modalidades de Aula</h2>
-                <p>Opções de atendimento estruturadas para atender às reais necessidades do seu filho e da sua família.</p>
+                <p>Opções de atendimento estruturadas como um verdadeiro guia educacional para atender às reais necessidades do seu filho e da sua família.</p>
             </div>
 
             <div class="services-grid">
@@ -650,7 +704,7 @@
         <div class="container">
             <div class="cta-box">
                 <h2>Vamos Conversar Sobre o Seu Filho?</h2>
-                <p>Mais do que ensinar conteúdos, meu compromisso é desenvolver a autonomia, o potencial integral e o gosto pelo estudo do seu filho — sempre em parceria com a família e a escola.</p>
+                <p>Mais do que ensinar conteúdos, meu compromisso como Guia Educacional é desenvolver a autonomia, o potencial integral e o gosto pelo estudo do seu filho — sempre em parceria com a família e a escola.</p>
                 <a href="https://wa.me/5511963017787?text=Olá,%20Professora%20Carolina!%20Gostaria%20de%20agendar%20uma%20conversa." class="btn-primary btn-accent">Falar com a Prof.ª Carolina no WhatsApp</a>
             </div>
         </div>
@@ -659,7 +713,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Carolina Trindade — Aulas Particulares Transformadoras | Ensino Fundamental I</p>
+            <p>Carolina Trindade — Guia Educacional & Aulas Particulares | Ensino Fundamental I</p>
             <p>Atendimento em domicílio na Zona Oeste de São Paulo & Osasco</p>
         </div>
     </footer>
